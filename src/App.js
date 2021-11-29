@@ -1,7 +1,11 @@
+import Details from './components/Details';
+import Home from './components/Home';
+
 function App() {
   return (
     <div>
-      <h1>React Capstone</h1>
+      <Home />
+      <Details />
     </div>
   );
 }
