@@ -28,9 +28,12 @@ export default function Home() {
     dispatch(fetchCountryStats(e.target.id));
   };
 
-  // const submitSearch = () => {
-  //   window.location.href = '/details';
-  // };
+  const searchCountry = (e) => {
+    e.preventDefault();
+    const id = document.getElementById('input').value;
+    navigate('/details');
+    dispatch(fetchCountryStats(id));
+  };
 
   const dataArray = useSelector((state) => state.homeReducer.data);
 
@@ -53,8 +56,8 @@ export default function Home() {
     <div>
       <h2>COVID-19 World Wide Stats</h2>
       <form>
-        <input placeholder="country name" />
-        <button type="button" onClick={pageChange}>Search</button>
+        <input placeholder="country name" id="input" />
+        <button type="submit" onClick={searchCountry}>Search</button>
       </form>
       {countries}
     </div>
