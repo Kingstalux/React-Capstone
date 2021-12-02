@@ -41,7 +41,7 @@ export default function Home() {
     <div className="country-card" key={country.id}>
       <img src={country.flag} alt="flag" />
       <p>
-        Name:
+        Country:
         {country.name}
       </p>
       <p>
