@@ -1,10 +1,10 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import homeReducer from './home/home';
 
 const reducer = combineReducers({
-//   rocketsReducer,
-//   missionsReducer,
+  homeReducer,
 });
 
 const store = createStore(
