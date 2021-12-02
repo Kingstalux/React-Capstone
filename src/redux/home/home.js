@@ -1,8 +1,6 @@
 const FETCH_DATA_BEGIN = 'react-capstone/home/FETCH_DATA_BEGIN';
 const FETCH_DATA_SUCCESS = 'react-capstone/home/FETCH_DATA_SUCCESS';
 const FETCH_DATA_FAILURE = 'react-capstone/home/FETCH_DATA_FAILURE';
-// const ROCKETS_BOOKING = 'react-capstone/home/ROCKETS_BOOKING';
-// const ROCKETS_CANCELATION = 'react-capstone/home/ROCKETS_CANCELATION';
 
 const initialState = {
   data: [],
@@ -24,18 +22,6 @@ const fetchDataFailure = (error) => ({
   payload: { error },
 });
 
-// export const bookRocket = (payload) => ({
-//   type: ROCKETS_BOOKING,
-//   payload,
-// });
-
-// export const cancelRocket = (payload) => ({
-//   type: ROCKETS_CANCELATION,
-//   payload,
-// });
-
-// const countriesUrl = 'https://countriesnow.space/api/v0.1/countries/population';
-// const url = 'https://covid-api.mmediagroup.fr/v1/cases?continent=africa';
 const url = 'https://disease.sh/v3/covid-19/countries';
 
 function handleErrors(response) {
@@ -91,28 +77,6 @@ const homeReducer = (state = initialState, action) => {
         error: action.payload.error,
         data: [],
       };
-
-      // case ROCKETS_BOOKING:
-      //   return {
-      //     ...state,
-      //     rockets: state.rockets.map((rocket) => {
-      //       if (action.payload - 1 + 1 !== rocket.id) {
-      //         return rocket;
-      //       }
-      //       return { ...rocket, reserve: true };
-      //     }),
-      //   };
-
-      // case ROCKETS_CANCELATION:
-      //   return {
-      //     ...state,
-      //     rockets: state.rockets.map((rocket) => {
-      //       if (action.payload - 1 + 1 !== rocket.id) {
-      //         return rocket;
-      //       }
-      //       return { ...rocket, reserve: false };
-      //     }),
-      //   };
 
     default:
       return state;

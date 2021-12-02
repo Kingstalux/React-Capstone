@@ -1,0 +1,4 @@
+.country-card:hover {
+    cursor: pointer;
+    background-color: pink;
+}
