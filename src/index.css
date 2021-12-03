@@ -73,13 +73,15 @@ body {
 .country-card {
     margin-inline: 15px;
     margin-bottom: 15px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
     background-color: pink;
-    border-radius: 5px;
+}
+
+.country-card img {
+    margin-right: 7rem;
 }
 
 .country-card:hover {
@@ -129,4 +131,46 @@ body {
 
 .stats:nth-child(odd) {
     background-color: pink;
+}
+
+@media (max-width: 1024px) {
+
+    .navbar p {
+        font-size: medium;
+    }
+
+    .form {
+        justify-content: space-between;
+    }
+
+    .form input {
+        min-width: 50vw;
+    }
+
+    .country-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .country-card {
+        flex-direction: column;
+    }
+
+    .country-card img {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .country-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .country-card {
+        max-width: 250px;
+    }
+    
 }
