@@ -1,8 +1,107 @@
-.country-card:hover {
-    cursor: pointer;
-    background-color: pink;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, 'Roboto Slab';
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(248, 156, 171);
+    text-align: center;
 }
 
 .navbar svg {
-    font-size: 50px;
+    font-size: 25px;
+    padding: 10px;
 }
+
+.navbar p {
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: sans-serif, 'Montserrat';
+}
+
+body {
+    background-color: rgb(248, 156, 171);
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: pink;
+}
+
+.form input {
+    width: 50vw;
+    padding: 5px;
+    border: none;
+    background-color: pink;
+}
+
+.form button {
+    padding: 5px;
+    border: none;
+    background-color: pink;
+}
+
+.form svg {
+    font-size: 25px;
+}
+
+.form svg:hover {
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.country-container {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.country-card {
+    margin-inline: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
+    background-color: pink;
+    border-radius: 5px;
+}
+
+.country-card:hover {
+    cursor: pointer;
+    background-color: rgb(248, 156, 171);
+}
+
+.country-card p {
+    font-size: large;
+    padding: 5px;
+}
+
+.country-card button {
+    margin-top: 5px;
+    border: none;
+    background-color: inherit;
+}
+
+.country-card svg {
+    font-size: 28px;
+}
+
+.country-card svg:hover {
+    font-size: 31px;
+    cursor: pointer;
+    background-color: inherit;
+}
+

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { FaSistrix, FaChevronCircleRight } from 'react-icons/fa';
 import { fetchData } from '../redux/home/home';
 import { fetchCountryStats } from '../redux/details/details';
 
@@ -40,26 +41,33 @@ export default function Home() {
   const countries = dataArray.map((country) => (
     <div className="country-card" key={country.id}>
       <img src={country.flag} alt="flag" />
-      <p>
-        Country:
-        {country.name}
-      </p>
-      <p>
-        Population:
-        {country.population}
-      </p>
-      <button type="button" id={country.name} onClick={pageChange}>Details</button>
+      <div>
+        <p>
+          Country:
+          {country.name}
+        </p>
+        <p>
+          Population:
+          {country.population}
+        </p>
+        <button type="button" id={country.name} onClick={pageChange}>
+          <FaChevronCircleRight onClick={pageChange} />
+        </button>
+      </div>
     </div>
   ));
 
   return (
     <div>
-      <h2>COVID-19 World Wide Stats</h2>
-      <form>
-        <input placeholder="country name" id="input" />
-        <button type="submit" onClick={searchCountry}>Search</button>
+      <form className="form">
+        <input placeholder="Search By Country Name" id="input" />
+        <button type="submit" onClick={searchCountry}>
+          <FaSistrix />
+        </button>
       </form>
-      {countries}
+      <div className="country-container">
+        {countries}
+      </div>
     </div>
   );
 }
