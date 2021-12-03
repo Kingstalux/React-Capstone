@@ -89,6 +89,10 @@ body {
     background-color: rgb(248, 156, 171);
 }
 
+.pop {
+    display: flex;
+}
+
 .country-card p {
     font-size: large;
     padding: 5px;
@@ -96,12 +100,14 @@ body {
 
 .country-card button {
     margin-top: 5px;
-    border: none;
+    border: 1px solid black;
     background-color: inherit;
+    padding: 5px;
 }
 
 .country-card svg {
     font-size: 28px;
+    z-index: 1;
 }
 
 .country-card svg:hover {
