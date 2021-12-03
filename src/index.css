@@ -159,13 +159,13 @@ body {
   cursor: pointer;
 }
 
-.paginatedBtns a:hover {
+.activeBtn a {
   border: 1px solid #551a8b;
   background-color: pink;
   color: #551a8b;
 }
 
-.activeBtn a {
+.paginatedBtns a:hover {
   border: 1px solid #551a8b;
   background-color: pink;
   color: #551a8b;
@@ -196,7 +196,6 @@ body {
   .country-card img {
     margin-right: 0;
   }
-
 }
 
 @media (max-width: 600px) {

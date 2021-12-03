@@ -13,7 +13,7 @@ The project is deployed using Heroku and is accessible online
 
 ## Preview App
 
-- ![React Page](./src/images/react.gif)
+- ![React Page](./src/images/react-capstone.gif)
 
 ## Built With
 
