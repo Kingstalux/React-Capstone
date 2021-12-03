@@ -1,182 +1,179 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif, 'Roboto Slab';
-    line-height: 24px;
-    font-weight: normal;
-    font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, 'Roboto Slab';
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: rgb(248, 156, 171);
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(248, 156, 171);
+  text-align: center;
 }
 
 .navbar svg {
-    font-size: 25px;
-    padding: 10px;
+  font-size: 25px;
+  padding: 10px;
 }
 
 .navbar p {
-    font-weight: bolder;
-    font-size: 25px;
-    font-family: sans-serif, 'Montserrat';
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: sans-serif, 'Montserrat';
 }
 
 body {
-    background-color: rgb(248, 156, 171);
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
+  background-color: rgb(248, 156, 171);
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
 }
 
 .form {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background-color: pink;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: pink;
 }
 
 .form input {
-    width: 50vw;
-    padding: 5px;
-    border: none;
-    background-color: pink;
+  width: 50vw;
+  padding: 5px;
+  border: none;
+  background-color: pink;
 }
 
 .form button {
-    padding: 5px;
-    border: none;
-    background-color: pink;
+  padding: 5px;
+  border: none;
+  background-color: pink;
 }
 
 .form svg {
-    font-size: 25px;
-}
-
-.form svg:hover {
-    cursor: pointer;
-    font-size: 28px;
-}
-
-.country-container {
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.country-card {
-    margin-inline: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
-    background-color: pink;
-}
-
-.country-card img {
-    margin-right: 7rem;
-}
-
-.country-card:hover {
-    cursor: pointer;
-    background-color: rgb(248, 156, 171);
-}
-
-.pop {
-    display: flex;
-}
-
-.country-card p {
-    font-size: large;
-    padding: 5px;
-}
-
-.country-card button {
-    margin-top: 5px;
-    border: 1px solid black;
-    background-color: inherit;
-    padding: 5px;
+  font-size: 25px;
 }
 
 .country-card svg {
-    font-size: 28px;
-    z-index: 1;
+  font-size: 28px;
+  z-index: 1;
+}
+
+.form svg:hover {
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.country-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.country-card {
+  margin-inline: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
+  background-color: pink;
+}
+
+.country-card img {
+  margin-right: 7rem;
+}
+
+.country-card:hover {
+  cursor: pointer;
+  background-color: rgb(248, 156, 171);
+}
+
+.pop {
+  display: flex;
+}
+
+.country-card p {
+  font-size: large;
+  padding: 5px;
+}
+
+.country-card button {
+  margin-top: 5px;
+  border: 1px solid black;
+  background-color: inherit;
+  padding: 5px;
 }
 
 .country-card svg:hover {
-    font-size: 31px;
-    cursor: pointer;
-    background-color: inherit;
+  font-size: 31px;
+  cursor: pointer;
+  background-color: inherit;
 }
 
 .flag {
-    background-color: pink;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
+  background-color: pink;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .country-stats h2 {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .stats:nth-child(odd) {
-    background-color: pink;
+  background-color: pink;
 }
 
 @media (max-width: 1024px) {
+  .navbar p {
+    font-size: medium;
+  }
 
-    .navbar p {
-        font-size: medium;
-    }
+  .form {
+    justify-content: space-between;
+  }
 
-    .form {
-        justify-content: space-between;
-    }
+  .form input {
+    min-width: 50vw;
+  }
 
-    .form input {
-        min-width: 50vw;
-    }
+  .country-container {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .country-container {
-        align-items: center;
-        justify-content: center;
-    }
+  .country-card {
+    flex-direction: column;
+  }
 
-    .country-card {
-        flex-direction: column;
-    }
-
-    .country-card img {
-        margin-right: 0;
-    }
+  .country-card img {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 600px) {
+  .country-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .country-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .country-card {
-        max-width: 250px;
-    }
-    
+  .country-card {
+    max-width: 250px;
+  }
 }

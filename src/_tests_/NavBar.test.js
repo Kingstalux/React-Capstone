@@ -11,7 +11,7 @@ describe('NavBar Element Tests', () => {
     render(
       <Provider store={store}>
         <Router>
-            <NavBar />
+          <NavBar />
         </Router>
       </Provider>,
     );
@@ -22,10 +22,10 @@ describe('NavBar Element Tests', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-        <Router>
+          <Router>
             <NavBar />
-        </Router>
-      </Provider>,
+          </Router>
+        </Provider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

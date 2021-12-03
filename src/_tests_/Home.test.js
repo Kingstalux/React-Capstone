@@ -11,7 +11,7 @@ describe('Home Element Tests', () => {
     render(
       <Provider store={store}>
         <Router>
-            <Home />
+          <Home />
         </Router>
       </Provider>,
     );
@@ -22,10 +22,10 @@ describe('Home Element Tests', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-        <Router>
+          <Router>
             <Home />
-        </Router>
-      </Provider>,
+          </Router>
+        </Provider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

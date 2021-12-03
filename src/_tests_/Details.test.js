@@ -11,7 +11,7 @@ describe('Details Element Tests', () => {
     render(
       <Provider store={store}>
         <Router>
-            <Details />
+          <Details />
         </Router>
       </Provider>,
     );
@@ -22,10 +22,10 @@ describe('Details Element Tests', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-        <Router>
+          <Router>
             <Details />
-        </Router>
-      </Provider>,
+          </Router>
+        </Provider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
