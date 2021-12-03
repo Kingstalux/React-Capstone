@@ -139,6 +139,38 @@ body {
   background-color: pink;
 }
 
+.paginatedBtns {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 80%; */
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.paginatedBtns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #551a8b;
+  color: pink;
+  cursor: pointer;
+}
+
+.paginatedBtns a:hover {
+  border: 1px solid #551a8b;
+  background-color: pink;
+  color: #551a8b;
+}
+
+.activeBtn a {
+  border: 1px solid #551a8b;
+  background-color: pink;
+  color: #551a8b;
+}
+
 @media (max-width: 1024px) {
   .navbar p {
     font-size: medium;

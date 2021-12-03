@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, NavLink } from 'react-router-dom';
+import ReactPaginate from 'react-paginate';
 import { FaSistrix, FaChevronCircleRight } from 'react-icons/fa';
 import { fetchData } from '../redux/home/home';
 import { fetchCountryStats } from '../redux/details/details';
@@ -31,34 +32,45 @@ export default function Home() {
 
   const dataArray = useSelector((state) => state.homeReducer.data);
 
-  const countries = dataArray.map((country) => (
-    <div className="country-card" key={country.id}>
-      <img src={country.flag} alt="flag" />
-      <div>
-        <div className="pop">
-          {' '}
-          <p>
-            Country:
-          </p>
-          <p>
-            {country.name}
-          </p>
-        </div>
-        <div className="pop">
-          <p>
-            Population:
-          </p>
-          <p>
-            {country.population}
-          </p>
-        </div>
-        <br />
-        <div id={country.name}>
-          <NavLink to="/details" onClick={pageChange} id={country.name}><FaChevronCircleRight id={country.name} /></NavLink>
+  const [pageNumber, setPageNumber] = useState(0);
+  const countriesPerPage = 6;
+  const pagesVisited = pageNumber * countriesPerPage;
+
+  const countries = dataArray.slice(pagesVisited, pagesVisited + countriesPerPage)
+    .map((country) => (
+      <div className="country-card" key={country.id}>
+        <img src={country.flag} alt="flag" />
+        <div>
+          <div className="pop">
+            {' '}
+            <p>
+              Country:
+            </p>
+            <p>
+              {country.name}
+            </p>
+          </div>
+          <div className="pop">
+            <p>
+              Population:
+            </p>
+            <p>
+              {country.population}
+            </p>
+          </div>
+          <br />
+          <div id={country.name}>
+            <NavLink to="/details" onClick={pageChange} id={country.name}><FaChevronCircleRight id={country.name} /></NavLink>
+          </div>
         </div>
       </div>
-    </div>
-  ));
+    ));
+
+  const pageCount = Math.ceil(dataArray.length / countriesPerPage);
+
+  const changePage = ({ selected }) => {
+    setPageNumber(selected);
+  };
 
   return (
     <div>
@@ -71,6 +83,17 @@ export default function Home() {
       <div className="country-container">
         {countries}
       </div>
+      <ReactPaginate
+        previousLabel="Previous"
+        nextLabel="Next"
+        pageCount={pageCount}
+        onPageChange={changePage}
+        containerClassName="paginatedBtns"
+        previousLinkClassName="prevBtn"
+        nextLinkClassName="nextBtn"
+        disabledLinkClassName="disableBtn"
+        activeClassName="activeBtn"
+      />
     </div>
   );
 }
