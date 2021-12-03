@@ -83,6 +83,7 @@ body {
   align-items: center;
   box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
   background-color: pink;
+  min-height: 175px;
 }
 
 .country-card img {
@@ -144,7 +145,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 80%; */
   height: 40px;
   margin-bottom: 15px;
 }
@@ -196,6 +196,7 @@ body {
   .country-card img {
     margin-right: 0;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -207,5 +208,14 @@ body {
 
   .country-card {
     max-width: 250px;
+  }
+
+  .paginatedBtns {
+    max-width: 95vw;
+  }
+
+  .paginatedBtns a {
+    padding: 5px;
+    margin: 4px;
   }
 }

@@ -26,7 +26,7 @@ const url = 'https://disease.sh/v3/covid-19/countries/';
 
 function handleErrors(response) {
   if (!response.ok) {
-    throw Error(response.statusText);
+    throw Error(alert('The country data you requested is not available'));
   }
   return response;
 }

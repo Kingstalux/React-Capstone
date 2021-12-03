@@ -33,7 +33,7 @@ export default function Home() {
   const dataArray = useSelector((state) => state.homeReducer.data);
 
   const [pageNumber, setPageNumber] = useState(0);
-  const countriesPerPage = 6;
+  const countriesPerPage = 4;
   const pagesVisited = pageNumber * countriesPerPage;
 
   const countries = dataArray.slice(pagesVisited, pagesVisited + countriesPerPage)
@@ -84,14 +84,13 @@ export default function Home() {
         {countries}
       </div>
       <ReactPaginate
-        previousLabel="Previous"
+        previousLabel="Prev"
         nextLabel="Next"
         pageCount={pageCount}
         onPageChange={changePage}
         containerClassName="paginatedBtns"
         previousLinkClassName="prevBtn"
         nextLinkClassName="nextBtn"
-        disabledLinkClassName="disableBtn"
         activeClassName="activeBtn"
       />
     </div>
