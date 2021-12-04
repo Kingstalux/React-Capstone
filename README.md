@@ -8,8 +8,9 @@ The project is deployed using Heroku and is accessible online
 
 
 
-## Live Page
-[Covid-19 Tracker](https://tracker-covid-19-2021.herokuapp.com/)
+## Live Page and Loom presentation
+- [Covid-19 Tracker](https://tracker-covid-19-2021.herokuapp.com/)
+- [Presentation](https://www.loom.com/share/4dc304140b27489c978c2585152a0154)
 
 ## Preview App
 
