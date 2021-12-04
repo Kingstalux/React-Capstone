@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+# REACT CAPSTONE - COVID-19 TRACKER
 .The project is a single page application (SPA) built with React and Redux.
 The data retrieved from the API is stored in the Redux store and then filtered using a Filter stateless component.
 Every page (the home page and the details for each country) has a unique route within the SPA.
@@ -24,24 +24,6 @@ The project is deployed using Heroku and is accessible online
 - ### Technologies used
   - Webpack, Babelrc, Linters
 
-## Getting Started
-
-
-To get a local copy up and running follow these simple example steps.
-1) Enter `git clone https://github.com/Kingstalux/React-capstone` into terminal
-
-2) Open in browser to view site
-
-## Testing
-
-To test this project you need to :
-``` node
-    npm test
-```
-
-### Prerequisites
--code editor
-
 
 ## Getting Started
 
@@ -55,11 +37,31 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Usage
-- `$ git clone https://github.com/Kingstalux/React-capstone`
-- `$ cd spacex-hub`
-- run the command `code .` to open the file in VS Code
-- run the command `npm install` to install the necessary files
-- run the command `npm start` to open the code in the browser with webpack server
+- To get local copy :
+ ``` node
+  git clone https://github.com/Kingstalux/    React-capstone
+  ```
+ ```node
+   cd react-capstone
+ ```
+  ```node
+   code .
+ ```
+  ```node
+   npm install
+ ```
+ - To open in browser using webpack server :
+  ```node
+   npm start
+ ```
+
+ ## Testing
+
+To test this project you need to :
+``` node
+    npm test
+```
+
 
 ## Author
 
