@@ -58,7 +58,6 @@ export default function Home() {
               {country.population}
             </p>
           </div>
-          <br />
           <div id={country.name}>
             <NavLink to="/details" onClick={pageChange} id={country.name}><FaChevronCircleRight id={country.name} /></NavLink>
           </div>
