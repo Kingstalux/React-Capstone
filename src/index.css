@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  /* font-family: sans-serif, 'Roboto Slab'; */
   font-family: sans-serif, 'Lato';
   line-height: 24px;
   font-weight: normal;
@@ -15,6 +14,10 @@
   padding: 10px;
   background-color: rgb(248, 156, 171);
   text-align: center;
+}
+
+.iconic {
+  display: flex;
 }
 
 .navbar svg {
@@ -67,6 +70,7 @@ body {
 
 .country-card img {
   box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
+  margin-right: 7rem;
 }
 
 .form svg:hover {
@@ -91,21 +95,19 @@ body {
   min-height: 175px;
 }
 
-.country-card:nth-child(2), .country-card:nth-child(3) {
+.country-card:nth-child(2),
+.country-card:nth-child(3) {
   background-color: rgb(248, 156, 171);
-}
-
-.country-card:nth-child(2):hover, .country-card:nth-child(3):hover {
-  background-color: pink;
-}
-
-.country-card img {
-  margin-right: 7rem;
 }
 
 .country-card:hover {
   cursor: pointer;
   background-color: rgb(248, 156, 171);
+}
+
+.country-card:nth-child(2):hover,
+.country-card:nth-child(3):hover {
+  background-color: pink;
 }
 
 .pop {
@@ -204,15 +206,18 @@ body {
 
   .country-card {
     flex-direction: column;
+    max-height: 300px;
   }
 
   .country-card img {
     margin-right: 0;
+    height: 195px;
+    width: 45vw;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 600px) {
-
   .country-container {
     margin-top: 0;
     margin-bottom: 15px;
@@ -230,7 +235,8 @@ body {
     border: 1px solid rgb(248, 156, 171);
   }
 
-  .country-card:nth-child(1):hover, .country-card:nth-child(4):hover {
+  .country-card:nth-child(1):hover,
+  .country-card:nth-child(4):hover {
     border: 1px solid pink;
   }
 
@@ -239,7 +245,6 @@ body {
   }
 
   .country-card img {
-    width: 45vw;
     min-width: 150px;
     height: 140px;
     margin: 0;
@@ -258,6 +263,9 @@ body {
 }
 
 @media (max-width: 400px) {
+  .navbar svg {
+    padding-right: 5px;
+  }
 
   .country-card {
     width: 50vw;
@@ -268,4 +276,3 @@ body {
     height: 100px;
   }
 }
-

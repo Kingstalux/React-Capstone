@@ -8,7 +8,7 @@ export default function NavBar() {
       <nav className="navbar">
         <NavLink to="/"><FaArrowAltCircleLeft /></NavLink>
         <p>COVID-19 WORLD WIDE STATS - 2021</p>
-        <div>
+        <div className="iconic">
           <FaMicrophoneAlt />
           <FaWhmcs />
         </div>
