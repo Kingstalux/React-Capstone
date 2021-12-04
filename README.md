@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REACT CAPSTONE - COVID-19 TRACKER
+.The project is a single page application (SPA) built with React and Redux.
+The data retrieved from the API is stored in the Redux store and then filtered using a Filter stateless component.
+Every page (the home page and the details for each country) has a unique route within the SPA.
+The project is deployed using Heroku and is accessible online
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Live Page and Loom presentation
+- [Covid-19 Tracker](https://tracker-covid-19-2021.herokuapp.com/)
+- [Presentation](https://www.loom.com/share/4dc304140b27489c978c2585152a0154)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Preview App
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ![React Page](./src/images/react-capstone.gif)
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ### Major languages
+  - Javascript, CSS
+- ### Frameworks
+  - ReactJS, Redux, React-Redux, React Bootstrap, Heroku
+- ### Technologies used
+  - Webpack, Babelrc, Linters
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- VS Code
+- Chrome Browser
+- Gitbash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage
+- To get local copy :
+ ``` node
+  git clone https://github.com/Kingstalux/    React-capstone
+  ```
+ ```node
+   cd react-capstone
+ ```
+  ```node
+   code .
+ ```
+  ```node
+   npm install
+ ```
+ - To open in browser using webpack server :
+  ```node
+   npm start
+ ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ ## Testing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To test this project you need to :
+``` node
+    npm test
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Ngu Kingsely**
 
-### Code Splitting
+- GitHub: [@Kingstalux](https://github.com/Kingstalux)
+- Twitter: [@NguKingsley](https://twitter.com/NguKingsley)
+- LinkedIn: [Ngu Kingsely](https://www.linkedin.com/in/ngu-kingsely-junior-cho-974b60136/)
+## Acknowledgment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Original design idea by Nelson Sakwa on Behance.
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues, and feature requests are welcome!
 
-### Advanced Configuration
+Feel free to check the [issues page](https://github.com/Kingstalux/Maths-magicians/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

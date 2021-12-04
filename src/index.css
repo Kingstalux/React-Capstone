@@ -1,13 +1,278 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif, 'Lato';
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(248, 156, 171);
+  text-align: center;
+}
+
+.iconic {
+  display: flex;
+}
+
+.navbar svg {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.navbar p {
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: sans-serif, 'Montserrat';
+}
+
+body {
+  background-color: rgb(248, 156, 171);
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+}
+
+.form {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: pink;
+}
+
+.form input {
+  width: 50vw;
+  padding: 5px;
+  border: none;
+  background-color: pink;
+}
+
+.form button {
+  padding: 5px;
+  border: none;
+  background-color: pink;
+}
+
+.form svg {
+  font-size: 25px;
+}
+
+.country-card svg {
+  font-size: 28px;
+  z-index: 1;
+}
+
+.country-card img {
+  box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
+  margin-right: 7rem;
+}
+
+.form svg:hover {
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.country-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.country-card {
+  margin-inline: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: -1px 2px 17px rgba(0, 0, 0, 0.5);
+  background-color: pink;
+  min-height: 175px;
+}
+
+.country-card:nth-child(2),
+.country-card:nth-child(3) {
+  background-color: rgb(248, 156, 171);
+}
+
+.country-card:hover {
+  cursor: pointer;
+  background-color: rgb(248, 156, 171);
+}
+
+.country-card:nth-child(2):hover,
+.country-card:nth-child(3):hover {
+  background-color: pink;
+}
+
+.pop {
+  display: flex;
+}
+
+.country-card p {
+  font-size: large;
+  padding: 5px;
+}
+
+.country-card button {
+  margin-top: 5px;
+  border: 1px solid black;
+  background-color: inherit;
+  padding: 5px;
+}
+
+.country-card svg:hover {
+  font-size: 31px;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.flag {
+  background-color: pink;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.country-stats h2 {
+  padding: 15px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.stats:nth-child(odd) {
+  background-color: pink;
+}
+
+.paginatedBtns {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.paginatedBtns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #551a8b;
+  color: pink;
+  cursor: pointer;
+}
+
+.activeBtn a {
+  border: 1px solid #551a8b;
+  background-color: pink;
+  color: #551a8b;
+}
+
+.paginatedBtns a:hover {
+  border: 1px solid #551a8b;
+  background-color: pink;
+  color: #551a8b;
+}
+
+@media (max-width: 1024px) {
+  .navbar p {
+    font-size: medium;
+  }
+
+  .form {
+    justify-content: space-between;
+  }
+
+  .form input {
+    min-width: 50vw;
+  }
+
+  .country-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .country-card {
+    flex-direction: column;
+    max-height: 300px;
+  }
+
+  .country-card img {
+    margin-right: 0;
+    height: 195px;
+    width: 45vw;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .country-container {
+    margin-top: 0;
+    margin-bottom: 15px;
+    overflow-x: hidden;
+  }
+
+  .country-container div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .country-card {
+    width: 50vw;
+    height: 275px;
+    border: 1px solid rgb(248, 156, 171);
+  }
+
+  .country-card:nth-child(1):hover,
+  .country-card:nth-child(4):hover {
+    border: 1px solid pink;
+  }
+
+  .country-card p {
+    font-size: 15px;
+  }
+
+  .country-card img {
+    min-width: 150px;
+    height: 140px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .paginatedBtns {
+    max-width: 95vw;
+  }
+
+  .paginatedBtns a {
+    padding: 5px;
+    margin: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar svg {
+    padding-right: 5px;
+  }
+
+  .country-card {
+    width: 50vw;
+    height: 230px;
+  }
+
+  .country-card img {
+    height: 100px;
+  }
 }
