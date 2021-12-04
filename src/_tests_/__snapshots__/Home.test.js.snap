@@ -36,5 +36,41 @@ exports[`Home Element Tests renders correctly 1`] = `
   <div
     className="country-container"
   />
+  <ul
+    className="paginatedBtns"
+  >
+    <li
+      className="previous disabled"
+    >
+      <a
+        aria-disabled="true"
+        aria-label="Previous page"
+        className="prevBtn "
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        rel="prev"
+        role="button"
+        tabIndex="-1"
+      >
+        Prev
+      </a>
+    </li>
+    <li
+      className="next"
+    >
+      <a
+        aria-disabled="false"
+        aria-label="Next page"
+        className="nextBtn"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        rel="next"
+        role="button"
+        tabIndex="0"
+      >
+        Next
+      </a>
+    </li>
+  </ul>
 </div>
 `;

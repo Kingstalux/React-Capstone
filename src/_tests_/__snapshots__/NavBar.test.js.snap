@@ -33,7 +33,9 @@ exports[`NavBar Element Tests renders correctly 1`] = `
     <p>
       COVID-19 WORLD WIDE STATS - 2021
     </p>
-    <div>
+    <div
+      className="iconic"
+    >
       <svg
         fill="currentColor"
         height="1em"
