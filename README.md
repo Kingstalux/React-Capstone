@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # REACT CAPSTONE - COVID-19 TRACKER
-.The project is a single page application (SPA) built with React and Redux.
+This project is a single page application (SPA) built with React and Redux.
 The data retrieved from the API is stored in the Redux store and then filtered using a Filter stateless component.
 Every page (the home page and the details for each country) has a unique route within the SPA.
 The project is deployed using Heroku and is accessible online
